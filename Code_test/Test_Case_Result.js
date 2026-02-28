@@ -10,15 +10,15 @@ let passCount = 0;
 let failCount = 0;
 let skipCount = 0;
 for(let i=0; i<testResults.length; i++){
-    if(testResults[i] == "pass"){
+    if(testResults[i] === "pass"){
         passCount++;
     }
 
-    else if(testResults[i] == "fail"){
+    else if(testResults[i] === "fail"){
         failCount++;
     }
 
-    else if(testResults[i] == "skip"){
+    else if(testResults[i] === "skip"){
         skipCount++;
     }
 }
